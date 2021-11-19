@@ -1,12 +1,27 @@
+body {
+    font-size: 20px;/*
+    background: linear-gradient(to right, #fd7c84,#fffdfa);*/
+}
 a {
     text-decoration: none;
-    color: #000;     
+    color: #4c00ff;     
 }
 a:hover {
     background-color: #006eff;
 }
 ul li:hover {
-    background-color: #ffee00;
+    background-color: yellow;
+    font-size: 22px;
+    color: green;
     opacity: .7;
     width: 120px;
+}
+hr {
+    border: 1px solid #e2e2e2;
+}
+q {
+    color: #0400ff;
+}
+h1 {
+    color: red;
 }
