@@ -1,1 +1,32 @@
-
+body {
+    background-color: #D3D3D3;
+    color: #008000;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.d-flex {
+    display: block;
+    box-sizing: border-box;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: #FFD700;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin: 5px 10px;
+    width: 100%;
+    max-width: 80px;
+    text-align: center;
+}
+a:last-child {
+    margin-bottom: 0;
+}
+a:hover {
+    background-color: #caf022;
+}
+h1 > p {
+    font-size: 30px;
+    color: #002efc;
+}
