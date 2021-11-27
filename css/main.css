@@ -1,32 +1,75 @@
 body {
-    background-color: #D3D3D3;
-    color: #008000;
-    margin-left: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #161321;
+    color: #fff;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.header {
     font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 6px;
 }
-.d-flex {
-    display: block;
-    box-sizing: border-box;
+.info {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 6px;
+    border-top: 0.5px solid #555;
+    margin: 0!important;
 }
-a {
+/*---------------------------------------*/
+.nav {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.number {
+    font-size: 70px;
+    margin: 0;
+}
+.number-left {
+    text-align: left;
+}
+.number-right {
+    text-align: right;
+}
+.lesson {
+    background-color: #262637;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    padding: 24px;
+}
+.lesson:hover {
+    box-shadow:0 0 6px 6px #555;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/*---------------------------------------*/
+.location-open-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.open-lesson {
     display: block;
     text-decoration: none;
     color: #000;
     background-color: #FFD700;
     padding: 12px 25px;
     border-radius: 8px;
-    margin: 5px 10px;
     width: 100%;
     max-width: 80px;
     text-align: center;
 }
-a:last-child {
+.open-lesson:last-child {
     margin-bottom: 0;
 }
-a:hover {
+.open-lesson:hover {
     background-color: #caf022;
-}
-h1 > p {
-    font-size: 30px;
-    color: #002efc;
 }
