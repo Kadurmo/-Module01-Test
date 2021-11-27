@@ -1,0 +1,47 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #161321;
+    color: #fff;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.header {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+.info {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 6px;
+    border-top: 0.5px solid #D3D3D3;
+    margin: 0!important;
+}
+/*---------------------------------------*/
+.nav {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.number {
+    font-size: 70px;
+    margin: 0;
+}
+.number-left {
+    text-align: left;
+}
+.number-right {
+    text-align: right;
+}
+.lesson {
+    background-color: #262637;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    padding: 24px;
+}
