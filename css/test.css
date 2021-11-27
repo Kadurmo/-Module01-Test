@@ -20,7 +20,7 @@ body {
     font-weight: 400;
     text-align: center;
     padding-top: 6px;
-    border-top: 0.5px solid #D3D3D3;
+    border-top: 0.5px solid #555;
     margin: 0!important;
 }
 /*---------------------------------------*/
@@ -44,4 +44,32 @@ body {
     margin-top: 12px;
     margin-bottom: 30px;
     padding: 24px;
+}
+.lesson:hover {
+    box-shadow:0 0 6px 6px #555;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/*---------------------------------------*/
+.location-open-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.open-lesson {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: #FFD700;
+    padding: 12px 25px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 80px;
+    text-align: center;
+}
+.open-lesson:last-child {
+    margin-bottom: 0;
+}
+.open-lesson:hover {
+    background-color: #caf022;
 }
