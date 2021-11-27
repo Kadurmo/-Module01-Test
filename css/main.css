@@ -51,10 +51,17 @@ body {
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+a {
+    color: #caf022;
+}
 /*---------------------------------------*/
 .location-open-right {
     display: flex;
     justify-content: flex-end;
+}
+.location-open-left {
+    display: flex;
+    justify-content: flex-start;
 }
 .open-lesson {
     display: block;
