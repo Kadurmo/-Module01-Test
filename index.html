@@ -10,19 +10,149 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <p>Учебный профиль: Виталий Новиков Kaduromo</p>
             <p>Email: vitalzsk@gmail.com</p>
-            <p class="info">Здесь находится описание заданий и ссылки на домашки по урокам</p>
         </div>
-    <nav class="nav">
-        <div class="container">
+
+    <nav>
+        <p class="info">Чтобы перейти к интересующей Вас теме, выберете тему и урок:</p>
+        <div class="half">
+            <div class="tab">
+                <input id="tab-one" type="checkbox" name="tabs">
+                <label class="tab-label" for="tab-one">Модуль 1</label>
+                <div class="tab-content">
+                    <a href="#lesson1">
+                        Открыть урок 1
+                    </a>
+                    <a href="#lesson2">
+                        Открыть урок 2
+                    </a>
+                    <a href="#lesson3">
+                        Открыть урок 3
+                    </a>
+                    <a href="#lesson4">
+                        Открыть урок 4
+                    </a>
+                    <a href="#lesson5">
+                        Открыть урок 5
+                    </a>
+                    <a href="#lesson6">
+                        Открыть урок 6
+                    </a>
+                    <a href="#lesson7">
+                        Открыть урок 7
+                    </a>
+                    <a href="#lesson8">
+                        Открыть урок 8
+                    </a>
+                    <a href="#lesson9">
+                        Открыть урок 9
+                    </a>
+                    <a href="#lesson10">
+                        Открыть урок 10
+                    </a>
+                    <a href="#lesson11">
+                        Открыть урок 11
+                    </a>
+                    <a href="#lesson12">
+                        Открыть урок 12
+                    </a>
+                    <a href="#lesson13">
+                        Открыть урок 13
+                    </a>
+                    <a href="#lesson14">
+                        Открыть урок 14
+                    </a>
+                    <a href="#lesson15">
+                        Открыть урок 15
+                    </a>
+                    <a href="#lesson16">
+                        Открыть урок 16
+                    </a>
+                    <a href="#lesson17">
+                        Открыть урок 17
+                    </a>
+                    <a href="#lesson18">
+                        Открыть урок 18
+                    </a>
+                </div>
+            </div>
+            <div class="tab">
+                <input id="tab-two" type="checkbox" name="tabs">
+                <label class="tab-label" for="tab-two">Модуль 2</label>
+                <div class="tab-content">
+                    <p>Недоступно. Ссылки не работают.</p>
+                    <!--
+                    <p>
+                    <a href="#lesson1">
+                        Открыть урок 1
+                    </a>
+                    <a href="#lesson2">
+                        Открыть урок 2
+                    </a>
+                    <a href="#lesson3">
+                        Открыть урок 3
+                    </a>
+                    <a href="#lesson4">
+                        Открыть урок 4
+                    </a>
+                    <a href="#lesson5">
+                        Открыть урок 5
+                    </a>
+                    <a href="#lesson6">
+                        Открыть урок 6
+                    </a>
+                    <a href="#lesson7">
+                        Открыть урок 7
+                    </a>
+                    <a href="#lesson8">
+                        Открыть урок 8
+                    </a>
+                    <a href="#lesson9">
+                        Открыть урок 9
+                    </a>
+                    <a href="#lesson10">
+                        Открыть урок 10
+                    </a>
+                    <a href="#lesson11">
+                        Открыть урок 11
+                    </a>
+                    <a href="#lesson12">
+                        Открыть урок 12
+                    </a>
+                    <a href="#lesson13">
+                        Открыть урок 13
+                    </a>
+                    <a href="#lesson14">
+                        Открыть урок 14
+                    </a>
+                    <a href="#lesson15">
+                        Открыть урок 15
+                    </a>
+                    <a href="#lesson16">
+                        Открыть урок 16
+                    </a>
+                    <a href="#lesson17">
+                        Открыть урок 17
+                    </a>
+                    <a href="#lesson18">
+                        Открыть урок 18
+                    </a>
+                    </p>
+                    -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
         <div class="lesson">
-            <p class="number number-left">01</p>
+            <p class="number number-left" id="lesson1">01</p>
             <p class="task">
                 Задание:
                 <ul>
@@ -33,7 +163,7 @@
             </p>
         </div>
         <div class="lesson">
-            <p class="number number-right">02</p>
+            <p class="number number-right" id="lesson2">02</p>
             <p class="task">
                 Задание:
                 <ul>
@@ -46,7 +176,7 @@
             </p>
         </div>
         <div class="lesson">
-            <p class="number number-left">03</p>
+            <p class="number number-left" id="lesson3">03</p>
             <p class="task">
                 Задание:
                 <ul>
@@ -64,7 +194,7 @@
             </div>
         </div>
         <div class="lesson">
-            <p class="number number-right">04</p>
+            <p class="number number-right" id="lesson4">04</p>
             <p class="task">
                 Задание:
                 <ul>
@@ -85,7 +215,7 @@
             </div>
         </div>
         <div class="lesson">
-            <p class="number number-left">05</p>
+            <p class="number number-left" id="lesson5">05</p>
             <p class="task">
                 Задание:
                 <ul>
@@ -100,7 +230,7 @@
             </div>
         </div>
         <div class="lesson">
-            <p class="number number-right">06</p>
+            <p class="number number-right" id="lesson6">06</p>
             <p class="task">
                 Задание:
                 <ul>
@@ -116,7 +246,7 @@
             </div>
         </div>
         <div class="lesson">
-            <p class="number number-left">07</p>
+            <p class="number number-left" id="lesson7">07</p>
             <p class="task">
                 Задание:
                 <ul>
@@ -130,7 +260,7 @@
             </div>
         </div>
         <div class="lesson">
-            <p class="number number-right">08</p>
+            <p class="number number-right" id="lesson8">08</p>
             <p class="task">
                 Задание:
                 <p>1) Задать классы для ссылок, которые находятся в блоке section. Указать класс с именем link и присвоить следующие стили:</p>
@@ -147,7 +277,7 @@
             </div>
         </div>
         <div class="lesson">
-            <p class="number number-left">09</p>
+            <p class="number number-left" id="lesson9">09</p>
             <p class="task">
                 Задание:
                 <ul>
@@ -162,7 +292,7 @@
             </p>
         </div>
         <div class="lesson">
-            <p class="number number-right">10</p>
+            <p class="number number-right" id="lesson10">10</p>
             <p class="task">
                 Задание:
                 <ul>
@@ -174,11 +304,11 @@
                 </ul>
             </p>
             <div class="location-open-left">
-                <a class="open-lesson" href="https://kadurmo.github.io/Module01-Burger/Lessons/lesson10" target="_blank">Урок 10</a>
+                <a class="open-lesson" href="https://kadurmo.github.io/Module01-Burger/Lessons/lesson10" target="_blank" id="lesson11">Урок 10</a>
             </div>
         </div>
         <div class="lesson">
-            <p class="number number-left">11</p>
+            <p class="number number-left" id="lesson11">11</p>
             <p class="task">
                  <a href="https://github.com/Kadurmo/Module01-Burger" target="_blank">Репозиторий</a>
                  <br>
@@ -195,6 +325,6 @@
             </div>
         </div>
     </div>
-</nav>
+    
 </body>
 </html>

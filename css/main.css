@@ -22,6 +22,7 @@ body {
     padding-top: 6px;
     border-top: 0.5px solid #555;
     margin: 0!important;
+    margin-bottom: 10px!important;
 }
 /*---------------------------------------*/
 .nav {
@@ -79,4 +80,104 @@ a {
 }
 .open-lesson:hover {
     background-color: #caf022;
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+.half {
+    display: flex!important;
+    gap: 10px;
+}
+  /* Acordeon styles */
+  .tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+}
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.tab label {
+    display: block;
+    padding: 0 15px;
+    background-color: #262637;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+    display: flex!important;
+    justify-content: space-around;
+}
+.tab-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 0;
+    overflow: hidden;
+    background-color: rgb(30, 26, 44);
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+    margin-bottom: 10px!important;
+}
+@media only screen and (max-width: 760px) {
+    .tab-content {
+        overflow-y: scroll!important;
+    }
+}
+.tab-content a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: #FFD700;
+    padding: 12px 25px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 80px;
+    text-align: center;
+    margin: 5px auto;
+}
+.tab-content:hover {
+    box-shadow:0 0 6px 6px #555;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.tab-content p {
+    margin: 1em;
+}
+  /* :checked */
+.tab input:checked ~ .tab-content {
+    max-height: 100vh;
+}
+  /* Icon */
+.tab label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+}
+.tab input[type=checkbox] + label::after {
+    content: "+";
+}
+.tab input[type=radio] + label::after {
+    content: "\25BC";
+}
+.tab input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+}
+.tab input[type=radio]:checked + label::after {
+    transform: rotateX(180deg);
 }
