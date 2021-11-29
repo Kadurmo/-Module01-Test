@@ -119,7 +119,7 @@ a {
     flex-wrap: wrap;
     max-height: 0;
     overflow: hidden;
-    background-color: rgb(30, 26, 44);
+    background-color: #1e1a2c;
     -webkit-transition: max-height .35s;
     -o-transition: max-height .35s;
     transition: max-height .35s;
@@ -128,6 +128,14 @@ a {
 @media only screen and (max-width: 760px) {
     .tab-content {
         overflow-y: scroll!important;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .tab-content a {
+        padding: 4px 20px!important;
+        width: 20%!important;
+        margin: 5px!important;
+        font-size: 12px;
     }
 }
 .tab-content a {
